@@ -1,6 +1,7 @@
 # cypressfun
 
 Following pages have been covered with tests:
+
 https://the-internet.herokuapp.com/tables
 https://the-internet.herokuapp.com/dynamic_controls
 https://the-internet.herokuapp.com/broken_images
