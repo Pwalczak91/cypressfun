@@ -23,3 +23,19 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+
+Cypress.Commands.add('signIn', (username, password) => {
+    cy.get('#username').type(username)
+    cy.get('#password').type(password)
+    cy.get('.radius').click()
+})
+
+Cypress.Commands.add('assertTextInElement', (element, expectedText) => {
+    cy.get(element).invoke('text').then((text) => {
+        expect(text).contain(expectedText)
+    })
+})
+
+
+
